@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Explore ML4Code papers with Topics &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <a href='/contributing.html' class='ribbon'>Contribute to ML4Code</a>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+   <a class="sidebar-nav-item active" href="/topic-viz.html">Topic-based Explorer</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <h2>Topic-based Explorer</h2>
+<p>Using topic-modelling the following topics have been extracted. The top stemmed words apprear below. 
+  Please change the slider to present the papers that mostly related to the appropria topics</p>
+<div id="topicslider">
+</div>
+<p>
+<ul id="toppapers">
+  <li>Please move the sliders to look at the papers.</li>
+</ul>
+</p>
+
+
+
+<script>
+  var all_papers = null;
+  var num_topics = -1;
+
+  $(document).ready(
+    function() {
+      $.getJSON('/topics.json', function(data) {
+        all_papers=data.paper_data;
+        num_topics = data.topics.length;
+        html = "";
+        for (let i=0; i < num_topics; i++) {
+            html += '<tag style="white-space: nowrap;">'+ data.topics[i].join(", ") +' <input type="range" min="0" max="10" value="0" style="width:50px" id="topicSlider'+i+'"></tag> '
+        }
+        $("#topicslider").append(html);
+        for (let i=0; i < num_topics; i++) {
+          $("#topicSlider"+i).on("change", renderPapers);
+        }
+      });
+    });
+
+  function scorePaper(paper_id) {
+    let score = 0;
+    topic_dist = all_papers[paper_id].topic_distr;
+    for (let i=0; i < num_topics; i++) {
+      score += $("#topicSlider"+i).val() * topic_dist[i];
+    }
+    return score;
+  }
+
+  function renderPapers(e, u) {
+    paper_idxs = [];
+    for (let i=0; i < all_papers.length; i++) {
+      paper_idxs.push([i, scorePaper(i)]);
+    }
+    paper_idxs = paper_idxs.sort(function(a,b){return b[1] - a[1]});
+    
+    $("#toppapers").text("");
+    for (let i=0; i < 20; i++) {
+      data = all_papers[paper_idxs[i][0]];
+      $("#toppapers").append("<li><a href='/publications/"+data.key+"'>"+ data.title +"</a>. " + data.year + "</li>");
+    }
+  }
+</script>
+    </div>
+
+  </body>
+</html>
