@@ -186,6 +186,15 @@ td {
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
+/* Dark */
+.theme-base-07 .sidebar {
+  background-color: #444444;
+}
+.theme-base-07 .content a,
+.theme-base-07 .related-posts li a:hover {
+  color: #444444;
+}
+
 /* Red */
 .theme-base-08 .sidebar {
   background-color: #ac4142;
