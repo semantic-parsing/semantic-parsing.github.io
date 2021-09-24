@@ -1,25 +1,10 @@
 ---
 layout: default
-title: A Survey of Machine Learning for Big Code and Naturalness
+title: A Survey of Modeling and Data resources for Semantic Parsing
 ---
-### Machine Learning on Source Code
+### Semantic Parsing
 
-The billions of lines of source code that have been written contain
-implicit knowledge about how to write good code, code that is
-easy to read and to debug.
-A recent line of research aims to find statistical patterns in large
-corpora of code to drive *new software development tools and program
-analyses*.
-
-This website and the accompanying [article](https://arxiv.org/abs/1709.06182) surveys the work in this emerging area.
-
-Like writing and speaking, software development is an act of human communication.
-At its core,
-the naturalness of software employs statistical modeling over big code to
-reason about rich variety of programs developers write.  This new line of
-research is inherently interdisciplinary, uniting the machine learning and
-natural language processing communities with software engineering
-and programming language communities.
+Semantic Parsing is the task of converting natural language texts into formal machine-understandable logical-form representations. This website surveys the work in this area.
 
 #### 🏷 Browse Papers by Tag
 {% assign rawtags = Array.new %}
@@ -36,20 +21,6 @@ This site is an experiment: a [living literature review](https://en.wikipedia.or
 you explore, [search and navigate]({% link papers.html %}) the literature in this area, by
 following a [taxonomy]({% link base-taxonomy/index.md %})
 based on the underlying design principles of each model.
-The full survey is available [as a research paper](https://arxiv.org/abs/1709.06182).
-Please cite as
-<pre>
-@article{allamanis2018survey,
-  title={A survey of machine learning for big code and naturalness},
-  author={Allamanis, Miltiadis and Barr, Earl T and Devanbu, Premkumar and Sutton, Charles},
-  journal={ACM Computing Surveys (CSUR)},
-  volume={51},
-  number={4},
-  pages={81},
-  year={2018},
-  publisher={ACM}
-}
-</pre>
 
 ### Contributing
 
@@ -63,17 +34,11 @@ for contributing](contributing.html).
 
 The core survey and the original taxonomy was created by
 
-* [Miltos Allamanis](https://miltos.allamanis.com) Microsoft Research, Cambridge, UK
-* [Earl T. Barr](http://earlbarr.com) University College London, London, UK
-* [Prem Devanbu](http://web.cs.ucdavis.edu/~devanbu/) University of California, Davis, USA
-* [Charles Sutton](http://homepages.inf.ed.ac.uk/csutton/) University of Edinburgh and The Alan Turing Institute, UK
+* [Rajaswa Patil](https://rajaswa.github.io/) TCS Research, India
 
 #### Contributors to the website
 This website accepts external [contributions](/contributing.html).
 Please, feel free to add your name below, once you contribute to this
 website. A comprehensive list can be found [here](https://github.com/ml4code/ml4code.github.io/graphs/contributors).
 
-* [Uri Alon](http://www.cs.technion.ac.il/~urialon/) Technion, Israel
-* [Shaked Brody](https://shakedbr.cswp.cs.technion.ac.il/) Technion, Israel
-* [Nghi D. Q. Bui](https://bdqnghi.github.io/) Singapore Management University, Singapore
-* [Rajaswa Patil](https://rajaswa.github.io/) TCS Research, India
+The structure of this survey has been borrowed from the [ml4code initiative](https://ml4code.github.io/).
