@@ -19,7 +19,7 @@
 
   <title>
     
-      Publications by Tag &middot; Semantic Parsing
+      SQL Parsing &middot; Semantic Parsing
     
   </title>
 
@@ -64,7 +64,7 @@
   <nav class="sidebar-nav">
    <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
    <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
-   <a class="sidebar-nav-item active" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
@@ -101,95 +101,29 @@ function search() {
 
 
     <div class="content container">
-      
+      <h2>SQL Parsing</h2>
+
+<b>SQL Parsing</b> involves converting a natural language query into its equivalent SQL query which can be run over given databases to obtain the answer from the output denotation.
 
 
+<table id="genModelTable">
+<thead><th>Name</th><th>Type</th><th>Representation</th><th>Model</th><th>Application</th><th>Abstract</th></thead><tbody>
 
-<h1>Publications by Tag</h1>
-<p>
-The following tags appear in the publications listed in the review:
-</p>
-<tag><a href="/tags.html#cross-domain">cross-domain</a></tag> <tag><a href="/tags.html#cross-lingual">cross-lingual</a></tag> <tag><a href="/tags.html#meta-learning">meta-learning</a></tag> <tag><a href="/tags.html#multilingual">multilingual</a></tag> <tag><a href="/tags.html#sql">sql</a></tag> <tag><a href="/tags.html#transformer">transformer</a></tag> 
+</tbody></table>
 
-<h2>Tags</h2>
-<p>See below a list of all tags and the related papers</p>
-
-
-
-
-   <h3>🏷 cross-domain <a id="cross-domain"></a></h3>
-   <ul>
-   
-     
-       <li> <a href="/publications/wang2021meta/">Meta-Learning for Domain Generalization in Semantic Parsing</a> Bailin Wang, Mirella Lapata, Ivan Titov </li>
-     
-   
-     
-   
-   </ul>
-
-   <h3>🏷 cross-lingual <a id="cross-lingual"></a></h3>
-   <ul>
-   
-     
-   
-     
-       <li> <a href="/publications/sherborne2021zero/">Zero-Shot Cross-lingual Semantic Parsing</a> Tom Sherborne, Mirella Lapata </li>
-     
-   
-   </ul>
-
-   <h3>🏷 meta-learning <a id="meta-learning"></a></h3>
-   <ul>
-   
-     
-       <li> <a href="/publications/wang2021meta/">Meta-Learning for Domain Generalization in Semantic Parsing</a> Bailin Wang, Mirella Lapata, Ivan Titov </li>
-     
-   
-     
-   
-   </ul>
-
-   <h3>🏷 multilingual <a id="multilingual"></a></h3>
-   <ul>
-   
-     
-   
-     
-       <li> <a href="/publications/sherborne2021zero/">Zero-Shot Cross-lingual Semantic Parsing</a> Tom Sherborne, Mirella Lapata </li>
-     
-   
-   </ul>
-
-   <h3>🏷 sql <a id="sql"></a></h3>
-   <ul>
-   
-     
-       <li> <a href="/publications/wang2021meta/">Meta-Learning for Domain Generalization in Semantic Parsing</a> Bailin Wang, Mirella Lapata, Ivan Titov </li>
-     
-   
-     
-       <li> <a href="/publications/sherborne2021zero/">Zero-Shot Cross-lingual Semantic Parsing</a> Tom Sherborne, Mirella Lapata </li>
-     
-   
-   </ul>
-
-   <h3>🏷 transformer <a id="transformer"></a></h3>
-   <ul>
-   
-     
-       <li> <a href="/publications/wang2021meta/">Meta-Learning for Domain Generalization in Semantic Parsing</a> Bailin Wang, Mirella Lapata, Ivan Titov </li>
-     
-   
-     
-       <li> <a href="/publications/sherborne2021zero/">Zero-Shot Cross-lingual Semantic Parsing</a> Tom Sherborne, Mirella Lapata </li>
-     
-   
-   </ul>
-
-
-
-
+<script>
+$(document).ready( function () {
+    $('#genModelTable').DataTable({
+		paging: false,
+		columnDefs: [
+			{
+				targets: [5],
+				visible: false,
+				searchable: true
+			}]
+		});
+});
+</script>
 
     </div>
 
