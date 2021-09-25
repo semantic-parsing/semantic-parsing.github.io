@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Code-Generating Models
+title: SQL Parsing
 ---
-<h2>Code-Generating Models</h2>
+<h2>SQL Parsing</h2>
 
-<b>Code-generating models</b> define a probability distribution over code by stochastically mod-
-eling the generation of smaller and simpler parts of code, e.g.
-tokens or AST nodes.
+<b>SQL Parsing</b> involves converting a natural language query into its equivalent SQL query which can be run over given databases to obtain the answer from the output denotation.
 
 {% assign publicationsList = site.data.allamanistaxonomy | sort: "bibkey" %}
 <table id="genModelTable">
@@ -17,9 +15,7 @@ tokens or AST nodes.
       <tr>
           <td data-order="{{publication.bibkey}}"><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
           <td>{{publication.type}}</td>
-          <td>{{publication.representation}}</td>
           <td>{{publication.model}}</td>
-          <td>{{publication.application}}</td>
           <td>{{pubDetails[0].content}}</td>
       </tr>
 {% endif %}{% endfor %}
