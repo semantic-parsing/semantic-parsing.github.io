@@ -12,9 +12,7 @@ distribution and their inputs and outputs. Some models fall into multiple catego
 because decompositions of their equations fall into different categories.
 
 
- * [**Code-generating Models**]({% link base-taxonomy/generative.html %}) define a probability distribution over code by 
-    stochastically modeling the generation of smaller and simpler parts of code, _e.g._
-    tokens or AST nodes.
+ * [**SQL Parsing**]({% link base-taxonomy/sql_parsing.html %}) involves converting a natural language query into its equivalent SQL query which can be run over given databases to obtain the answer from the output denotation.
 
  * [**Representational Models of Code**]({% link base-taxonomy/representational.html %}) take an abstract
     representation of 
