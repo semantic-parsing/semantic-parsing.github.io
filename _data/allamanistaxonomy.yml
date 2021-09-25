@@ -2,6 +2,7 @@
 
 # SQL Parsing
 - {bibkey: sherborne2021zero, categories: [sql_parsing], type: Cross-lingual, model: Transformer}
+- {bibkey: wang2021meta, categories: [sql_parsing], type: Cross-domain, model: Transformer}
 
 # Representational Models
 
