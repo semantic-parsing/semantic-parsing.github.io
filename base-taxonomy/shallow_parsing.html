@@ -8,7 +8,7 @@ title: Shallow Semantic Parsing
 
 {% assign publicationsList = site.data.allamanistaxonomy | sort: "bibkey" %}
 <table id="shallowModelTable">
-<thead><th>Name</th><th>Type</th><th>Dataset</th><th>Model</th><th>Domain</th></thead>
+<thead><th>Name</th><th>Dataset</th><th>Model</th><th>Domain</th></thead>
 <tbody>
 {% for publication in publicationsList %}{% if publication.categories contains "shallow_parsing" %}
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
