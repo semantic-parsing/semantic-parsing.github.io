@@ -19,7 +19,7 @@
 
   <title>
     
-      A Survey of Modeling and Data resources for Semantic Parsing &middot; Semantic Parsing
+      CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases &middot; Semantic Parsing
     
   </title>
 
@@ -101,52 +101,36 @@ function search() {
 
 
     <div class="content container">
-      <h3 id="semantic-parsing">Semantic Parsing</h3>
-
-<p>Semantic Parsing is the task of converting natural language texts into formal machine-understandable logical-form representations. This website surveys the work in this area.</p>
-
-<h4 id="-browse-papers-by-tag">🏷 Browse Papers by Tag</h4>
-
-<tag><a href="/tags.html#conversational">conversational</a></tag>
-<tag><a href="/tags.html#cross-domain">cross-domain</a></tag>
-<tag><a href="/tags.html#cross-lingual">cross-lingual</a></tag>
-<tag><a href="/tags.html#dataset">dataset</a></tag>
-<tag><a href="/tags.html#evaluation">evaluation</a></tag>
-<tag><a href="/tags.html#meta-learning">meta-learning</a></tag>
-<tag><a href="/tags.html#multi-lingual">multi-lingual</a></tag>
-<tag><a href="/tags.html#reinforcement-learning">reinforcement-learning</a></tag>
-<tag><a href="/tags.html#sql">sql</a></tag>
-<tag><a href="/tags.html#transformer">transformer</a></tag>
-
-<h3 id="about-this-site">About This Site</h3>
-
-<p>This site is an experiment: a <a href="https://en.wikipedia.org/wiki/Living_review">living literature review</a> that allows
-you explore, <a href="/papers.html">search and navigate</a> the literature in this area, by
-following a <a href="/base-taxonomy/">taxonomy</a>
-based on the underlying design principles of each model.</p>
-
-<h3 id="contributing">Contributing</h3>
-
-<p>This research area is evolving so fast that a static review cannot keep up.
-But a website can! We hope to make this site a living document.
-Anyone can add a paper to this web site, essentially by creating one Markdown file.
- To contribute, open a pull request in GitHub, by following <a href="contributing.html">these instructions 
-for contributing</a>.</p>
-
-<h3 id="contributors">Contributors</h3>
-
-<p>The core survey and the original taxonomy was created by</p>
-
-<ul>
-  <li><a href="https://rajaswa.github.io/">Rajaswa Patil</a> TCS Research, India</li>
-</ul>
-
-<h4 id="contributors-to-the-website">Contributors to the website</h4>
-<p>This website accepts external <a href="/contributing.html">contributions</a>.
-Please, feel free to add your name below, once you contribute to this
-website. A comprehensive list can be found <a href="https://github.com/ml4code/ml4code.github.io/graphs/contributors">here</a>.</p>
-
-<p>The structure of this survey has been borrowed from the <a href="https://ml4code.github.io/">ml4code initiative</a>.</p>
+      <div class="page">
+  <h1 class="page-title">CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases</h1>
+  <h5>Tao Yu, Rui Zhang, He Yang Er, Suyi Li, Eric Xue, Bo Pang, Xi Victoria Lin, Yi Chern Tan, Tianze Shi, Zihan Li, Youxuan Jiang, Michihiro Yasunaga, Sungrok Shim, Tao Chen, Alexander Fabbri, Zifan Li, Luyao Chen, Yuwen Zhang, Shreya Dixit, Vincent Zhang, Caiming Xiong, Richard Socher, Walter S Lasecki, Dragomir Radev. EMNLP 2019</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/1909.05378" target="_blank">ArXiV</a>]
+    
+      [<a href="https://aclanthology.org/D19-1204.pdf" target="_blank">PDF</a>]
+    
+      [<a href="https://yale-lily.github.io/cosql" target="_blank">Website</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=CoSQL:%20A%20Conversational%20Text-to-SQL%20Challenge%20Towards%20Cross-Domain%20Natural%20Language%20Interfaces%20to%20Databases' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#sql">sql</a></tag>
+    
+      <tag><a href="/tags.html#cross-domain">cross-domain</a></tag>
+    
+      <tag><a href="/tags.html#conversational">conversational</a></tag>
+    
+      <tag><a href="/tags.html#dataset">dataset</a></tag>
+    
+  </p>
+      
+      
+      <p><p>We present CoSQL, a corpus for building cross-domain, general-purpose database (DB) querying dialogue systems. It consists of 30k+ turns plus 10k+ annotated SQL queries, obtained from a Wizard-of-Oz (WOZ) collection of 3k dialogues querying 200 complex DBs spanning 138 domains. Each dialogue simulates a real-world DB query scenario with a crowd worker as a user exploring the DB and a SQL expert retrieving answers with SQL, clarifying ambiguous questions, or otherwise informing of unanswerable questions. When user questions are answerable by SQL, the expert describes the SQL and execution results to the user, hence maintaining a natural interaction flow. CoSQL introduces new challenges compared to existing task-oriented dialogue datasets:(1) the dialogue states are grounded in SQL, a domain-independent executable representation, instead of domain-specific slot-value pairs, and (2) because testing is done on unseen databases, success requires generalizing to new domains. CoSQL includes three tasks: SQL-grounded dialogue state tracking, response generation from query results, and user dialogue act prediction. We evaluate a set of strong baselines for each task and show that CoSQL presents significant challenges for future research. The dataset, baselines, and leaderboard will be released at this URL: https://yale-lily.github.io/cosql</p>
+</p>
+</div>
 
     </div>
 
