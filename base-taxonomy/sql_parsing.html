@@ -9,7 +9,7 @@ title: SQL Parsing
 {% assign publicationsList = site.data.allamanistaxonomy | sort: "bibkey" %}
 <table id="genModelTable">
 <thead><th>Name</th><th>Type</th><th>Model</th></thead><tbody>
-{% for publication in publicationsList %}{% if publication.categories contains "generative" %}
+{% for publication in publicationsList %}{% if publication.categories contains "sql_parsing" %}
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
     
       <tr>
