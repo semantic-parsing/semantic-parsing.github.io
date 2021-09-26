@@ -1,26 +1,14 @@
 ---
 layout: page
 title: Taxonomy
-description: A taxonomy of machine learning models of source code.
+description: A Taxonomy of Modeling and Data resources for Semantic Parsing.
 ---
-A probabilistic model of source code is a probability distribution 
-over code artifacts. To group these family of models
-in terms of shared design choices,
-we separate these models into three categories,
-based on the form of the equation of the modeled probability 
-distribution and their inputs and outputs. Some models fall into multiple categories
-because decompositions of their equations fall into different categories.
+Semantic Parsing is the task of converting natural language texts into formal machine-understandable logical-form representations.
 
 
  * [**SQL Parsing**]({% link base-taxonomy/sql_parsing.html %}) involves converting a natural language query into its equivalent SQL query which can be run over given databases to obtain the answer from the output denotation.
 
- * [**Representational Models of Code**]({% link base-taxonomy/representational.html %}) take an abstract
-    representation of 
-    code as input.  Example representations include token contexts or data flow.
-    The resulting model yields a conditional probability distribution over code
-    element properties, like the types of variables, and can predict them.
+ * [**Abstract Representation Parsing**]({% link base-taxonomy/abstract_representations.html %}) involves converting a natural language text into more semantically grounded logical forms. Some major abstract representations include: <b>UCCA</b> (Universal Conceptual Cognitive Annotation), <b>AMR</b> (Abstract Meaning Representation), <b>DRG</b> (Discourse Representation Graphs), and <b>EDS</b> (Elementary Dependency Structures).
 
- * [**Pattern Mining Models**]({% link base-taxonomy/pattern.html %}) infer, without supervision, a likely latent
-    structure within code. These models are an instantiation of clustering
-    in the code domain; they can find reusable and human-interpretable patterns.
+ * [**Shallow Semantic Parsing**]({% link base-taxonomy/pattern.html %}) is the process of assigning semantic roles to the predicates and entities in a sentence.
 
