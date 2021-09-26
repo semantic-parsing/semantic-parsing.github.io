@@ -1,8 +1,19 @@
 # In multiple categories
 
 # SQL Parsing
+- {bibkey: zhong2017seq2sql, categories: [sql_parsing], type: Cross-domain, model: Seq2SQL}
+- {bibkey: dollak2018improving, categories: [sql_parsing], type: Evaluation, model: Seq2Seq + COPY}
+- {bibkey: yu2018spider, categories: [sql_parsing], type: Cross-domain, model: N/A}
+- {bibkey: chen2019hybridqa, categories: [sql_parsing], type: Multi-hop, model: HYBRIDER}
+- {bibkey: yu2019cosql, categories: [sql_parsing], type: Conversational, model: SyntaxSQLNet}
+- {bibkey: yu2019sparc, categories: [sql_parsing], type: Conversational, model: CD-Seq2Seq}
+- {bibkey: elgohary2020speak, categories: [sql_parsing], type: Feedback, model: EditSQL}
+- {bibkey: nguyen2020a, categories: [sql_parsing], type: Cross-domain, model: Transformer}
+- {bibkey: zhang2020did, categories: [sql_parsing], type: Cross-domain, model: Transformer}
+- {bibkey: hazoom2021text, categories: [sql_parsing], type: Evaluation, model: Transformer}
 - {bibkey: sherborne2021zero, categories: [sql_parsing], type: Cross-lingual, model: Transformer}
 - {bibkey: wang2021meta, categories: [sql_parsing], type: Cross-domain, model: Transformer}
+
 
 # Abstract Representations
 

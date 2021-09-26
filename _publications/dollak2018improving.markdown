@@ -1,0 +1,14 @@
+---
+layout: publication
+title: "Improving Text-to-SQL Evaluation Methodology"
+authors: Catherine Finegan-Dollak, Jonathan K. Kummerfeld, Li Zhang, Karthik Ramanathan, Sesh Sadasivam, Rui Zhang, Dragomir Radev
+conference: ACL
+year: 2018
+bibkey: dollak2018improving
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1806.09029"}
+   - {name: "PDF", url: "https://www.aclweb.org/anthology/P18-1033.pdf"}
+   - {name: "Website", url: "https://github.com/jkkummerfeld/text2sql-data/"}
+tags: ["sql", "dataset"]
+---
+To be informative, an evaluation must measure how well systems generalize to realistic unseen data. We identify limitations of and propose improvements to current evaluations of text-to-SQL systems. First, we compare human-generated and automatically generated questions, characterizing properties of queries necessary for real-world applications. To facilitate evaluation on multiple datasets, we release standardized and improved versions of seven existing datasets and one new text-to-SQL dataset. Second, we show that the current division of data into training and test sets measures robustness to variations in the way questions are asked, but only partially tests how well systems generalize to new queries; therefore, we propose a complementary dataset split for evaluation of future work. Finally, we demonstrate how the common practice of anonymizing variables during evaluation removes an important challenge of the task. Our observations highlight key difficulties, and our methodology enables effective measurement of future development.
