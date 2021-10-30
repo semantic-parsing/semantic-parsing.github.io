@@ -39,6 +39,6 @@ The core survey and the original taxonomy was created by
 #### Contributors to the website
 This website accepts external [contributions](/contributing.html).
 Please, feel free to add your name below, once you contribute to this
-website. A comprehensive list can be found [here](https://github.com/ml4code/ml4code.github.io/graphs/contributors).
+website. A comprehensive list can be found [here](https://github.com/semantic-parsing/semantic-parsing.github.io/graphs/contributors).
 
 The structure of this survey has been borrowed from the [ml4code initiative](https://ml4code.github.io/).
