@@ -19,7 +19,7 @@
 
   <title>
     
-      A Survey of Modeling and Data resources for Semantic Parsing &middot; Semantic Parsing
+      An AMR Aligner Tuned by Transition-based Parser &middot; Semantic Parsing
     
   </title>
 
@@ -101,53 +101,30 @@ function search() {
 
 
     <div class="content container">
-      <h3 id="semantic-parsing">Semantic Parsing</h3>
-
-<p>Semantic Parsing is the task of converting natural language texts into formal machine-understandable logical-form representations. This website surveys the work in this area.</p>
-
-<h4 id="-browse-papers-by-tag">🏷 Browse Papers by Tag</h4>
-
-<tag><a href="/tags.html#AMR">AMR</a></tag>
-<tag><a href="/tags.html#conversational">conversational</a></tag>
-<tag><a href="/tags.html#cross-domain">cross-domain</a></tag>
-<tag><a href="/tags.html#cross-lingual">cross-lingual</a></tag>
-<tag><a href="/tags.html#dataset">dataset</a></tag>
-<tag><a href="/tags.html#evaluation">evaluation</a></tag>
-<tag><a href="/tags.html#meta-learning">meta-learning</a></tag>
-<tag><a href="/tags.html#multi-lingual">multi-lingual</a></tag>
-<tag><a href="/tags.html#reinforcement-learning">reinforcement-learning</a></tag>
-<tag><a href="/tags.html#sql">sql</a></tag>
-<tag><a href="/tags.html#transformer">transformer</a></tag>
-
-<h3 id="about-this-site">About This Site</h3>
-
-<p>This site is an experiment: a <a href="https://en.wikipedia.org/wiki/Living_review">living literature review</a> that allows
-you explore, <a href="/papers.html">search and navigate</a> the literature in this area, by
-following a <a href="/base-taxonomy/">taxonomy</a>
-based on the underlying design principles of each model.</p>
-
-<h3 id="contributing">Contributing</h3>
-
-<p>This research area is evolving so fast that a static review cannot keep up.
-But a website can! We hope to make this site a living document.
-Anyone can add a paper to this web site, essentially by creating one Markdown file.
- To contribute, open a pull request in GitHub, by following <a href="contributing.html">these instructions 
-for contributing</a>.</p>
-
-<h3 id="contributors">Contributors</h3>
-
-<p>The core survey and the original taxonomy was created by</p>
-
-<ul>
-  <li><a href="https://rajaswa.github.io/">Rajaswa Patil</a> TCS Research, India</li>
-</ul>
-
-<h4 id="contributors-to-the-website">Contributors to the website</h4>
-<p>This website accepts external <a href="/contributing.html">contributions</a>.
-Please, feel free to add your name below, once you contribute to this
-website. A comprehensive list can be found <a href="https://github.com/semantic-parsing/semantic-parsing.github.io/graphs/contributors">here</a>.</p>
-
-<p>The structure of this survey has been borrowed from the <a href="https://ml4code.github.io/">ml4code initiative</a>.</p>
+      <div class="page">
+  <h1 class="page-title">An AMR Aligner Tuned by Transition-based Parser</h1>
+  <h5>Yijia Liu, Wanxiang Che, Bo Zheng, Bing Qin, Ting Liu. EMNLP 2018</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/1810.03541" target="_blank">ArXiV</a>]
+    
+      [<a href="https://aclanthology.org/D18-1264.pdf" target="_blank">PDF</a>]
+    
+      [<a href="https://github.com/Oneplus/tamr" target="_blank">Code</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=An AMR Aligner Tuned by Transition-based Parser' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=An AMR Aligner Tuned by Transition-based Parser' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=An%20AMR%20Aligner%20Tuned%20by%20Transition-based%20Parser' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#AMR">AMR</a></tag>
+    
+  </p>
+      
+      
+      <p><p>In this paper, we propose a new rich resource enhanced AMR aligner which produces multiple alignments and a new transition system for AMR parsing along with its oracle parser. Our aligner is further tuned by our oracle parser via picking the alignment that leads to the highest-scored achievable AMR graph. Experimental results show that our aligner outperforms the rule-based aligner in previous work by achieving higher alignment F1 score and consistently improving two open-sourced AMR parsers. Based on our aligner and transition system, we develop a transition-based AMR parser that parses a sentence into its AMR graph directly. An ensemble of our parsers with only words and POS tags as input leads to 68.4 Smatch F1 score.</p>
+</p>
+</div>
 
     </div>
 
