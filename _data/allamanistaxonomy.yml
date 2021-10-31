@@ -16,5 +16,18 @@
 
 
 # Abstract Representations
+- {bibkey: ballesteros2017amr, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: LSTM}
+- {bibkey: banarescu2013abstract, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: N/A}
+- {bibkey: cai2020amr, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: Transformer}
+- {bibkey: goodman2016noise, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: DAGGER}
+- {bibkey: lee2020pushing, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: Transformer}
+- {bibkey: liu2018an, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: JAMR CAMR}
+- {bibkey: pust2015parsing, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: AMR LM}
+- {bibkey: wang2015boosting, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: Charniak}
+- {bibkey: wang2017getting, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: LSTM}
+- {bibkey: zhang2019amr, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: Transformer}
+- {bibkey: zhang2019broad, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: Transformer}
+- {bibkey: zhou2016amr, categories: [abstract_representations], representation: AMR, dataset: LDC2014T12, model: JAMR}
+
 
 # Shallow Semantic Parsing

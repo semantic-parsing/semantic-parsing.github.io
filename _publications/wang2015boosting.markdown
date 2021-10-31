@@ -8,7 +8,6 @@ bibkey: wang2015boosting
 additional_links:
    - {name: "PDF", url: "https://aclanthology.org/P15-2141.pdf"}
    - {name: "Code", url: "https://github.com/c-amr/camr"}
-tags: ["AMR"]
+tags: ["amr"]
 ---
-We describe Abstract Meaning Representation (AMR), a semantic representation language in which we are writing down the meanings of thousands of English sentences. We hope that a sembank of simple, whole-sentence semantic structures will spur new work in statistical natural language understanding and generation, like the Penn Treebank encouraged work on
-statistical parsing. This paper gives an overview of AMR and tools associated with it.
+We report improved AMR parsing results by adding a new action to a transitionbased AMR parser to infer abstract concepts and by incorporating richer features produced by auxiliary analyzers such as a semantic role labeler and a coreference resolver. We report final AMR parsing results that show an improvement of 7% absolute in F1 score over the best previously reported result. Our parser is available at: https://github.com/Juicechuan/AMRParsing
