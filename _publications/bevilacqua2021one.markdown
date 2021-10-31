@@ -1,0 +1,13 @@
+---
+layout: publication
+title: "One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline"
+authors: Michele Bevilacqua, Rexhina Blloshmi, Roberto Navigli
+conference: AAAI
+year: 2021
+bibkey: bevilacqua2021one
+additional_links:
+   - {name: "PDF", url: "https://ojs.aaai.org/index.php/AAAI/article/view/17489"}
+   - {name: "Code", url: "https://github.com/SapienzaNLP/spring"}
+tags: ["amr", "transformer"]
+---
+In Text-to-AMR parsing, current state-of-the-art semantic parsers use cumbersome pipelines integrating several different modules or components, and exploit graph recategorization, i.e., a set of content-specific heuristics that are developed on the basis of the training set. However, the generalizability of graph recategorization in an out-of-distribution setting is unclear. In contrast, state-of-the-art AMR-to-Text generation, which can be seen as the inverse to parsing, is based on simpler seq2seq. In this paper, we cast Text-to-AMR and AMR-to-Text as a symmetric transduction task and show that by devising a careful graph linearization and extending a pretrained encoder-decoder model, it is possible to obtain state-of-the-art performances in both tasks using the very same seq2seq approach, i.e., SPRING (Symmetric PaRsIng aNd Generation). Our model does not require complex pipelines, nor heuristics built on heavy assumptions. In fact, we drop the need for graph recategorization, showing that this technique is actually harmful outside of the standard benchmark. Finally, we outperform the previous state of the art on the English AMR 2.0 dataset by a large margin: on Text-to-AMR we obtain an improvement of 3.6 Smatch points, while on AMR-to-Text we outperform the state of the art by 11.2 BLEU points. We release the software at github.com/SapienzaNLP/spring.
