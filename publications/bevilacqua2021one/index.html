@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153224273-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153224273-6');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="semantic parsing, query languages, meaning representations, machine learning, discourse representations">
+
+  <title>
+    
+      One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline &middot; Semantic Parsing
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-07 layout-reverse">
+
+    <a href='/contributing.html' class='ribbon'>Contribute to Semantic Parsing</a>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Semantic Parsing
+        </a>
+      </h1>
+      <p class="lead">Research on Modeling and Data resources for Semantic Parsing.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+   <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://rajaswa.github.io/">Rajaswa Patil</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline</h1>
+  <h5>Michele Bevilacqua, Rexhina Blloshmi, Roberto Navigli. AAAI 2021</h5>
+  <p>
+    
+      [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/17489" target="_blank">PDF</a>]
+    
+      [<a href="https://github.com/SapienzaNLP/spring" target="_blank">Code</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=One%20SPRING%20to%20Rule%20Them%20Both:%20Symmetric%20AMR%20Semantic%20Parsing%20and%20Generation%20without%20a%20Complex%20Pipeline' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#amr">amr</a></tag>
+    
+      <tag><a href="/tags.html#transformer">transformer</a></tag>
+    
+  </p>
+      
+      
+      <p><p>In Text-to-AMR parsing, current state-of-the-art semantic parsers use cumbersome pipelines integrating several different modules or components, and exploit graph recategorization, i.e., a set of content-specific heuristics that are developed on the basis of the training set. However, the generalizability of graph recategorization in an out-of-distribution setting is unclear. In contrast, state-of-the-art AMR-to-Text generation, which can be seen as the inverse to parsing, is based on simpler seq2seq. In this paper, we cast Text-to-AMR and AMR-to-Text as a symmetric transduction task and show that by devising a careful graph linearization and extending a pretrained encoder-decoder model, it is possible to obtain state-of-the-art performances in both tasks using the very same seq2seq approach, i.e., SPRING (Symmetric PaRsIng aNd Generation). Our model does not require complex pipelines, nor heuristics built on heavy assumptions. In fact, we drop the need for graph recategorization, showing that this technique is actually harmful outside of the standard benchmark. Finally, we outperform the previous state of the art on the English AMR 2.0 dataset by a large margin: on Text-to-AMR we obtain an improvement of 3.6 Smatch points, while on AMR-to-Text we outperform the state of the art by 11.2 BLEU points. We release the software at github.com/SapienzaNLP/spring.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

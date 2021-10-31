@@ -144,6 +144,22 @@ the information of existing papers or adding new work.
 
 <tr>
 	<td>2021</td>
+	<td><a href="/publications/bevilacqua2021one/">One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=One%20SPRING%20to%20Rule%20Them%20Both:%20Symmetric%20AMR%20Semantic%20Parsing%20and%20Generation%20without%20a%20Complex%20Pipeline' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Michele Bevilacqua, Rexhina Blloshmi, Roberto Navigli</td>
+	<td>AAAI</td>
+	<td><p>In Text-to-AMR parsing, current state-of-the-art semantic parsers use cumbersome pipelines integrating several different modules or components, and exploit graph recategorization, i.e., a set of content-specific heuristics that are developed on the basis of the training set. However, the generalizability of graph recategorization in an out-of-distribution setting is unclear. In contrast, state-of-the-art AMR-to-Text generation, which can be seen as the inverse to parsing, is based on simpler seq2seq. In this paper, we cast Text-to-AMR and AMR-to-Text as a symmetric transduction task and show that by devising a careful graph linearization and extending a pretrained encoder-decoder model, it is possible to obtain state-of-the-art performances in both tasks using the very same seq2seq approach, i.e., SPRING (Symmetric PaRsIng aNd Generation). Our model does not require complex pipelines, nor heuristics built on heavy assumptions. In fact, we drop the need for graph recategorization, showing that this technique is actually harmful outside of the standard benchmark. Finally, we outperform the previous state of the art on the English AMR 2.0 dataset by a large margin: on Text-to-AMR we obtain an improvement of 3.6 Smatch points, while on AMR-to-Text we outperform the state of the art by 11.2 BLEU points. We release the software at github.com/SapienzaNLP/spring.</p>
+</td>
+	<td>amr transformer </td>
+</tr>
+
+<tr>
+	<td>2021</td>
 	<td><a href="/publications/wang2021meta/">Meta-Learning for Domain Generalization in Semantic Parsing</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=Meta-Learning for Domain Generalization in Semantic Parsing' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -162,22 +178,6 @@ the information of existing papers or adding new work.
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/lee2020pushing/">Pushing the Limits of AMR Parsing with Self-Learning</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Pushing the Limits of AMR Parsing with Self-Learning' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Pushing the Limits of AMR Parsing with Self-Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Pushing%20the%20Limits%20of%20AMR%20Parsing%20with%20Self-Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Young-Suk Lee, Ramon Fernandez Astudillo, Tahira Naseem, Revanth Gangi Reddy, Radu Florian, Salim Roukos</td>
-	<td>EMNLP</td>
-	<td><p>Abstract Meaning Representation (AMR) parsing has experienced a notable growth in performance in the last two years, due both to the impact of transfer learning and the development of novel architectures specific to AMR. At the same time, self-learning techniques have helped push the performance boundaries of other natural language processing applications, such as machine translation or question answering. In this paper, we explore different ways in which trained models can be applied to improve AMR parsing performance, including generation of synthetic text and AMR annotations as well as refinement of actions oracle. We show that, without any additional human annotations, these techniques improve an already performant parser and achieve state-of-the-art results on AMR 1.0 and AMR 2.0.</p>
-</td>
-	<td>amr transformer </td>
-</tr>
-
-<tr>
-	<td>2020</td>
 	<td><a href="/publications/cai2020amr/">AMR Parsing via Graph-Sequence Iterative Inference</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=AMR Parsing via Graph-Sequence Iterative Inference' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -190,22 +190,6 @@ the information of existing papers or adding new work.
 	<td><p>We propose a new end-to-end model that treats AMR parsing as a series of dual decisions on the input sequence and the incrementally constructed graph. At each time step, our model performs multiple rounds of attention, reasoning, and composition that aim to answer two critical questions: (1) which part of the input sequence to abstract; and (2) where in the output graph to construct the new concept. We show that the answers to these two questions are mutually causalities. We design a model based on iterative inference that helps achieve better answers in both perspectives, leading to greatly improved parsing accuracy. Our experimental results significantly outperform all previously reported Smatch scores by large margins. Remarkably, without the help of any large-scale pre-trained language model (e.g., BERT), our model already surpasses previous state-of-the-art using BERT. With the help of BERT, we can push the state-of-the-art results to 80.2% on LDC2017T10 (AMR 2.0) and 75.4% on LDC2014T12 (AMR 1.0).</p>
 </td>
 	<td>amr transformer </td>
-</tr>
-
-<tr>
-	<td>2020</td>
-	<td><a href="/publications/elgohary2020speak/">Speak to your Parser: Interactive Text-to-SQL with Natural Language Feedback</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Speak to your Parser: Interactive Text-to-SQL with Natural Language Feedback' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Speak to your Parser: Interactive Text-to-SQL with Natural Language Feedback' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Speak%20to%20your%20Parser:%20Interactive%20Text-to-SQL%20with%20Natural%20Language%20Feedback' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Ahmed Elgohary, Saghar Hosseini, Ahmed Hassan Awadallah</td>
-	<td>ACL</td>
-	<td><p>We study the task of semantic parse correction with natural language feedback. Given a natural language utterance, most semantic parsing systems pose the problem as one-shot translation where the utterance is mapped to a corresponding logical form. In this paper, we investigate a more interactive scenario where humans can further interact with the system by providing free-form natural language feedback to correct the system when it generates an inaccurate interpretation of an initial utterance. We focus on natural language to SQL systems and construct, SPLASH, a dataset of utterances, incorrect SQL interpretations and the corresponding natural language feedback. We compare various reference models for the correction task and show that incorporating such a rich form of feedback can significantly improve the overall semantic parsing accuracy while retaining the flexibility of natural language interaction. While we estimated human correction accuracy is 81.5%, our best model achieves only 25.1%, which leaves a large gap for improvement in future research. SPLASH is publicly available at this URL: https://github.com/MSR-LIT/Splash</p>
-</td>
-	<td>sql conversational dataset </td>
 </tr>
 
 <tr>
@@ -240,23 +224,39 @@ the information of existing papers or adding new work.
 	<td>sql cross-domain dataset </td>
 </tr>
 
-
-
 <tr>
-	<td>2019</td>
-	<td><a href="/publications/zhang2019amr/">AMR Parsing as Sequence-to-Graph Transduction</a>
+	<td>2020</td>
+	<td><a href="/publications/elgohary2020speak/">Speak to your Parser: Interactive Text-to-SQL with Natural Language Feedback</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=AMR Parsing as Sequence-to-Graph Transduction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=AMR Parsing as Sequence-to-Graph Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=AMR%20Parsing%20as%20Sequence-to-Graph%20Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Speak to your Parser: Interactive Text-to-SQL with Natural Language Feedback' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Speak to your Parser: Interactive Text-to-SQL with Natural Language Feedback' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Speak%20to%20your%20Parser:%20Interactive%20Text-to-SQL%20with%20Natural%20Language%20Feedback' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Sheng Zhang, Xutai Ma, Kevin Duh, Benjamin Van Durme</td>
+	<td>Ahmed Elgohary, Saghar Hosseini, Ahmed Hassan Awadallah</td>
 	<td>ACL</td>
-	<td><p>We propose an attention-based model that treats AMR parsing as sequence-to-graph transduction. Unlike most AMR parsers that rely on pre-trained aligners, external semantic resources, or data augmentation, our proposed parser is aligner-free, and it can be effectively trained with limited amounts of labeled AMR data. Our experimental results outperform all previously reported SMATCH scores, on both AMR 2.0 (76.3% on LDC2017T10) and AMR 1.0 (70.2% on LDC2014T12).</p>
+	<td><p>We study the task of semantic parse correction with natural language feedback. Given a natural language utterance, most semantic parsing systems pose the problem as one-shot translation where the utterance is mapped to a corresponding logical form. In this paper, we investigate a more interactive scenario where humans can further interact with the system by providing free-form natural language feedback to correct the system when it generates an inaccurate interpretation of an initial utterance. We focus on natural language to SQL systems and construct, SPLASH, a dataset of utterances, incorrect SQL interpretations and the corresponding natural language feedback. We compare various reference models for the correction task and show that incorporating such a rich form of feedback can significantly improve the overall semantic parsing accuracy while retaining the flexibility of natural language interaction. While we estimated human correction accuracy is 81.5%, our best model achieves only 25.1%, which leaves a large gap for improvement in future research. SPLASH is publicly available at this URL: https://github.com/MSR-LIT/Splash</p>
+</td>
+	<td>sql conversational dataset </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/lee2020pushing/">Pushing the Limits of AMR Parsing with Self-Learning</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Pushing the Limits of AMR Parsing with Self-Learning' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Pushing the Limits of AMR Parsing with Self-Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Pushing%20the%20Limits%20of%20AMR%20Parsing%20with%20Self-Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Young-Suk Lee, Ramon Fernandez Astudillo, Tahira Naseem, Revanth Gangi Reddy, Radu Florian, Salim Roukos</td>
+	<td>EMNLP</td>
+	<td><p>Abstract Meaning Representation (AMR) parsing has experienced a notable growth in performance in the last two years, due both to the impact of transfer learning and the development of novel architectures specific to AMR. At the same time, self-learning techniques have helped push the performance boundaries of other natural language processing applications, such as machine translation or question answering. In this paper, we explore different ways in which trained models can be applied to improve AMR parsing performance, including generation of synthetic text and AMR annotations as well as refinement of actions oracle. We show that, without any additional human annotations, these techniques improve an already performant parser and achieve state-of-the-art results on AMR 1.0 and AMR 2.0.</p>
 </td>
 	<td>amr transformer </td>
 </tr>
+
+
 
 <tr>
 	<td>2019</td>
@@ -272,6 +272,22 @@ the information of existing papers or adding new work.
 	<td><p>We present SParC, a dataset for cross-domain SemanticParsing in Context that consists of 4,298 coherent question sequences (12k+ individual questions annotated with SQL queries). It is obtained from controlled user interactions with 200 complex databases over 138 domains. We provide an in-depth analysis of SParC and show that it introduces new challenges compared to existing datasets. SParC demonstrates complex contextual dependencies, (2) has greater semantic diversity, and (3) requires generalization to unseen domains due to its cross-domain nature and the unseen databases at test time. We experiment with two state-of-the-art text-to-SQL models adapted to the context-dependent, cross-domain setup. The best model obtains an exact match accuracy of 20.2% over all questions and less than10% over all interaction sequences, indicating that the cross-domain setting and the con-textual phenomena of the dataset present significant challenges for future research. The dataset, baselines, and leaderboard are released at this URL: https://yale-lily.github.io/sparc</p>
 </td>
 	<td>sql cross-domain conversational dataset </td>
+</tr>
+
+<tr>
+	<td>2019</td>
+	<td><a href="/publications/zhang2019broad/">Broad-Coverage Semantic Parsing as Transduction</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Broad-Coverage Semantic Parsing as Transduction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Broad-Coverage Semantic Parsing as Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Broad-Coverage%20Semantic%20Parsing%20as%20Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Sheng Zhang, Xutai Ma, Kevin Duh, Benjamin Van Durme</td>
+	<td>EMNLP</td>
+	<td><p>We unify different broad-coverage semantic parsing tasks into a transduction parsing paradigm, and propose an attention-based neural transducer that incrementally builds meaning representation via a sequence of semantic relations. By leveraging multiple attention mechanisms, the neural transducer can be effectively trained without relying on a pre-trained aligner. Experiments separately conducted on three broad-coverage semantic parsing tasks – AMR, SDP and UCCA – demonstrate that our attention-based neural transducer improves the state of the art on both AMR and UCCA, and is competitive with the state of the art on SDP.</p>
+</td>
+	<td>amr transformer glove cnn </td>
 </tr>
 
 <tr>
@@ -308,37 +324,21 @@ the information of existing papers or adding new work.
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/zhang2019broad/">Broad-Coverage Semantic Parsing as Transduction</a>
+	<td><a href="/publications/zhang2019amr/">AMR Parsing as Sequence-to-Graph Transduction</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Broad-Coverage Semantic Parsing as Transduction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Broad-Coverage Semantic Parsing as Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Broad-Coverage%20Semantic%20Parsing%20as%20Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=AMR Parsing as Sequence-to-Graph Transduction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=AMR Parsing as Sequence-to-Graph Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=AMR%20Parsing%20as%20Sequence-to-Graph%20Transduction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
 	<td>Sheng Zhang, Xutai Ma, Kevin Duh, Benjamin Van Durme</td>
-	<td>EMNLP</td>
-	<td><p>We unify different broad-coverage semantic parsing tasks into a transduction parsing paradigm, and propose an attention-based neural transducer that incrementally builds meaning representation via a sequence of semantic relations. By leveraging multiple attention mechanisms, the neural transducer can be effectively trained without relying on a pre-trained aligner. Experiments separately conducted on three broad-coverage semantic parsing tasks – AMR, SDP and UCCA – demonstrate that our attention-based neural transducer improves the state of the art on both AMR and UCCA, and is competitive with the state of the art on SDP.</p>
+	<td>ACL</td>
+	<td><p>We propose an attention-based model that treats AMR parsing as sequence-to-graph transduction. Unlike most AMR parsers that rely on pre-trained aligners, external semantic resources, or data augmentation, our proposed parser is aligner-free, and it can be effectively trained with limited amounts of labeled AMR data. Our experimental results outperform all previously reported SMATCH scores, on both AMR 2.0 (76.3% on LDC2017T10) and AMR 1.0 (70.2% on LDC2014T12).</p>
 </td>
-	<td>amr transformer glove cnn </td>
+	<td>amr transformer </td>
 </tr>
 
 
-
-<tr>
-	<td>2018</td>
-	<td><a href="/publications/liu2018an/">An AMR Aligner Tuned by Transition-based Parser</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=An AMR Aligner Tuned by Transition-based Parser' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=An AMR Aligner Tuned by Transition-based Parser' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=An%20AMR%20Aligner%20Tuned%20by%20Transition-based%20Parser' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Yijia Liu, Wanxiang Che, Bo Zheng, Bing Qin, Ting Liu</td>
-	<td>EMNLP</td>
-	<td><p>In this paper, we propose a new rich resource enhanced AMR aligner which produces multiple alignments and a new transition system for AMR parsing along with its oracle parser. Our aligner is further tuned by our oracle parser via picking the alignment that leads to the highest-scored achievable AMR graph. Experimental results show that our aligner outperforms the rule-based aligner in previous work by achieving higher alignment F1 score and consistently improving two open-sourced AMR parsers. Based on our aligner and transition system, we develop a transition-based AMR parser that parses a sentence into its AMR graph directly. An ensemble of our parsers with only words and POS tags as input leads to 68.4 Smatch F1 score.</p>
-</td>
-	<td>amr </td>
-</tr>
 
 <tr>
 	<td>2018</td>
@@ -352,6 +352,22 @@ the information of existing papers or adding new work.
 	<td>Chunchuan Lyu, Ivan Titov</td>
 	<td>ACL</td>
 	<td><p>Abstract meaning representations (AMRs) are broad-coverage sentence-level semantic representations. AMRs represent sentences as rooted labeled directed acyclic graphs. AMR parsing is challenging partly due to the lack of annotated alignments between nodes in the graphs and words in the corresponding sentences. We introduce a neural parser which treats alignments as latent variables within a joint probabilistic model of concepts, relations and alignments. As exact inference requires marginalizing over alignments and is infeasible, we use the variational autoencoding framework and a continuous relaxation of the discrete alignments. We show that joint modeling is preferable to using a pipeline of align and parse. The parser achieves the best reported results on the standard benchmark (74.4% on LDC2016E25).</p>
+</td>
+	<td>amr </td>
+</tr>
+
+<tr>
+	<td>2018</td>
+	<td><a href="/publications/liu2018an/">An AMR Aligner Tuned by Transition-based Parser</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=An AMR Aligner Tuned by Transition-based Parser' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=An AMR Aligner Tuned by Transition-based Parser' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=An%20AMR%20Aligner%20Tuned%20by%20Transition-based%20Parser' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Yijia Liu, Wanxiang Che, Bo Zheng, Bing Qin, Ting Liu</td>
+	<td>EMNLP</td>
+	<td><p>In this paper, we propose a new rich resource enhanced AMR aligner which produces multiple alignments and a new transition system for AMR parsing along with its oracle parser. Our aligner is further tuned by our oracle parser via picking the alignment that leads to the highest-scored achievable AMR graph. Experimental results show that our aligner outperforms the rule-based aligner in previous work by achieving higher alignment F1 score and consistently improving two open-sourced AMR parsers. Based on our aligner and transition system, we develop a transition-based AMR parser that parses a sentence into its AMR graph directly. An ensemble of our parsers with only words and POS tags as input leads to 68.4 Smatch F1 score.</p>
 </td>
 	<td>amr </td>
 </tr>
@@ -392,18 +408,18 @@ the information of existing papers or adding new work.
 
 <tr>
 	<td>2017</td>
-	<td><a href="/publications/foland2017abstract/">Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks</a>
+	<td><a href="/publications/zhong2017seq2sql/">Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Abstract%20Meaning%20Representation%20Parsing%20using%20LSTM%20Recurrent%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Seq2SQL:%20Generating%20Structured%20Queries%20from%20Natural%20Language%20using%20Reinforcement%20Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>William Foland, James H. Martin</td>
-	<td>ACL</td>
-	<td><p>We present a system which parses sentences into Abstract Meaning Representations, improving state-of-the-art results for this task by more than 5%. AMR graphs represent semantic content using linguistic properties such as semantic roles, coreference, negation, and more. The AMR parser does not rely on a syntactic pre-parse, or heavily engineered features, and uses five recurrent neural networks as the key architectural components for inferring AMR graphs.</p>
+	<td>Victor Zhong, Caiming Xiong, Richard Socher</td>
+	<td></td>
+	<td><p>A significant amount of the world’s knowledge is stored in relational databases. However, the ability for users to retrieve facts from a database is limited due to a lack of understanding of query languages such as SQL. We propose Seq2SQL, a deep neural network for translating natural language questions to corresponding SQL queries. Our model leverages the structure of SQL queries to significantly reduce the output space of generated queries. Moreover, we use rewards from in-the-loop query execution over the database to learn a policy to generate unordered parts of the query, which we show are less suitable for optimization via cross entropy loss. In addition, we will publish WikiSQL, a dataset of 80654 hand-annotated examples of questions and SQL queries distributed across 24241 tables from Wikipedia. This dataset is required to train our model and is an order of magnitude larger than comparable datasets. By applying policy-based reinforcement learning with a query execution environment to WikiSQL, our model Seq2SQL outperforms attentional sequence to sequence models, improving execution accuracy from 35.9% to 59.4% and logical form accuracy from 23.4% to 48.3%.</p>
 </td>
-	<td>amr lstm </td>
+	<td>sql cross-domain dataset reinforcement-learning </td>
 </tr>
 
 <tr>
@@ -424,6 +440,22 @@ the information of existing papers or adding new work.
 
 <tr>
 	<td>2017</td>
+	<td><a href="/publications/foland2017abstract/">Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Abstract%20Meaning%20Representation%20Parsing%20using%20LSTM%20Recurrent%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>William Foland, James H. Martin</td>
+	<td>ACL</td>
+	<td><p>We present a system which parses sentences into Abstract Meaning Representations, improving state-of-the-art results for this task by more than 5%. AMR graphs represent semantic content using linguistic properties such as semantic roles, coreference, negation, and more. The AMR parser does not rely on a syntactic pre-parse, or heavily engineered features, and uses five recurrent neural networks as the key architectural components for inferring AMR graphs.</p>
+</td>
+	<td>amr lstm </td>
+</tr>
+
+<tr>
+	<td>2017</td>
 	<td><a href="/publications/damonte2017an/">An Incremental Parser for Abstract Meaning Representation</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=An Incremental Parser for Abstract Meaning Representation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -436,22 +468,6 @@ the information of existing papers or adding new work.
 	<td><p>Abstract Meaning Representation (AMR) is a semantic representation for natural language that embeds annotations related to traditional tasks such as named entity recognition, semantic role labeling, word sense disambiguation and co-reference resolution. We describe a transition-based parser for AMR that parses sentences left-to-right, in linear time. We further propose a test-suite that assesses specific subtasks that are helpful in comparing AMR parsers, and show that our parser is competitive with the state of the art on the LDC2015E86 dataset and that it outperforms state-of-the-art parsers for recovering named entities and handling polarity.</p>
 </td>
 	<td>amr </td>
-</tr>
-
-<tr>
-	<td>2017</td>
-	<td><a href="/publications/zhong2017seq2sql/">Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Seq2SQL:%20Generating%20Structured%20Queries%20from%20Natural%20Language%20using%20Reinforcement%20Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Victor Zhong, Caiming Xiong, Richard Socher</td>
-	<td></td>
-	<td><p>A significant amount of the world’s knowledge is stored in relational databases. However, the ability for users to retrieve facts from a database is limited due to a lack of understanding of query languages such as SQL. We propose Seq2SQL, a deep neural network for translating natural language questions to corresponding SQL queries. Our model leverages the structure of SQL queries to significantly reduce the output space of generated queries. Moreover, we use rewards from in-the-loop query execution over the database to learn a policy to generate unordered parts of the query, which we show are less suitable for optimization via cross entropy loss. In addition, we will publish WikiSQL, a dataset of 80654 hand-annotated examples of questions and SQL queries distributed across 24241 tables from Wikipedia. This dataset is required to train our model and is an order of magnitude larger than comparable datasets. By applying policy-based reinforcement learning with a query execution environment to WikiSQL, our model Seq2SQL outperforms attentional sequence to sequence models, improving execution accuracy from 35.9% to 59.4% and logical form accuracy from 23.4% to 48.3%.</p>
-</td>
-	<td>sql cross-domain dataset reinforcement-learning </td>
 </tr>
 
 <tr>
