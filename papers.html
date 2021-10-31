@@ -173,7 +173,7 @@ the information of existing papers or adding new work.
 	<td>EMNLP</td>
 	<td><p>Abstract Meaning Representation (AMR) parsing has experienced a notable growth in performance in the last two years, due both to the impact of transfer learning and the development of novel architectures specific to AMR. At the same time, self-learning techniques have helped push the performance boundaries of other natural language processing applications, such as machine translation or question answering. In this paper, we explore different ways in which trained models can be applied to improve AMR parsing performance, including generation of synthetic text and AMR annotations as well as refinement of actions oracle. We show that, without any additional human annotations, these techniques improve an already performant parser and achieve state-of-the-art results on AMR 1.0 and AMR 2.0.</p>
 </td>
-	<td>AMR </td>
+	<td>amr transformer </td>
 </tr>
 
 <tr>
@@ -221,7 +221,7 @@ the information of existing papers or adding new work.
 	<td>ACL</td>
 	<td><p>We propose a new end-to-end model that treats AMR parsing as a series of dual decisions on the input sequence and the incrementally constructed graph. At each time step, our model performs multiple rounds of attention, reasoning, and composition that aim to answer two critical questions: (1) which part of the input sequence to abstract; and (2) where in the output graph to construct the new concept. We show that the answers to these two questions are mutually causalities. We design a model based on iterative inference that helps achieve better answers in both perspectives, leading to greatly improved parsing accuracy. Our experimental results significantly outperform all previously reported Smatch scores by large margins. Remarkably, without the help of any large-scale pre-trained language model (e.g., BERT), our model already surpasses previous state-of-the-art using BERT. With the help of BERT, we can push the state-of-the-art results to 80.2% on LDC2017T10 (AMR 2.0) and 75.4% on LDC2014T12 (AMR 1.0).</p>
 </td>
-	<td>AMR </td>
+	<td>amr transformer </td>
 </tr>
 
 <tr>
@@ -271,7 +271,7 @@ the information of existing papers or adding new work.
 	<td>ACL</td>
 	<td><p>We propose an attention-based model that treats AMR parsing as sequence-to-graph transduction. Unlike most AMR parsers that rely on pre-trained aligners, external semantic resources, or data augmentation, our proposed parser is aligner-free, and it can be effectively trained with limited amounts of labeled AMR data. Our experimental results outperform all previously reported SMATCH scores, on both AMR 2.0 (76.3% on LDC2017T10) and AMR 1.0 (70.2% on LDC2014T12).</p>
 </td>
-	<td>AMR </td>
+	<td>amr transformer </td>
 </tr>
 
 <tr>
@@ -287,7 +287,7 @@ the information of existing papers or adding new work.
 	<td>EMNLP</td>
 	<td><p>We unify different broad-coverage semantic parsing tasks into a transduction parsing paradigm, and propose an attention-based neural transducer that incrementally builds meaning representation via a sequence of semantic relations. By leveraging multiple attention mechanisms, the neural transducer can be effectively trained without relying on a pre-trained aligner. Experiments separately conducted on three broad-coverage semantic parsing tasks – AMR, SDP and UCCA – demonstrate that our attention-based neural transducer improves the state of the art on both AMR and UCCA, and is competitive with the state of the art on SDP.</p>
 </td>
-	<td>AMR </td>
+	<td>amr transformer glove cnn </td>
 </tr>
 
 <tr>
@@ -353,7 +353,7 @@ the information of existing papers or adding new work.
 	<td>EMNLP</td>
 	<td><p>In this paper, we propose a new rich resource enhanced AMR aligner which produces multiple alignments and a new transition system for AMR parsing along with its oracle parser. Our aligner is further tuned by our oracle parser via picking the alignment that leads to the highest-scored achievable AMR graph. Experimental results show that our aligner outperforms the rule-based aligner in previous work by achieving higher alignment F1 score and consistently improving two open-sourced AMR parsers. Based on our aligner and transition system, we develop a transition-based AMR parser that parses a sentence into its AMR graph directly. An ensemble of our parsers with only words and POS tags as input leads to 68.4 Smatch F1 score.</p>
 </td>
-	<td>AMR </td>
+	<td>amr </td>
 </tr>
 
 <tr>
@@ -403,7 +403,7 @@ the information of existing papers or adding new work.
 	<td>EMNLP</td>
 	<td><p>This paper proposes to tackle the AMR parsing bottleneck by improving two components of an AMR parser: concept identification and alignment. We first build a Bidirectional LSTM based concept identifier that is able to incorporate richer contextual information to learn sparse AMR concept labels. We then extend an HMM-based word-to-concept alignment model with graph distance distortion and a rescoring method during decoding to incorporate the structural information in the AMR graph. We show integrating the two components into an existing AMR parser results in consistently better performance over the state of the art on various datasets.</p>
 </td>
-	<td>AMR </td>
+	<td>amr lstm </td>
 </tr>
 
 <tr>
@@ -419,7 +419,7 @@ the information of existing papers or adding new work.
 	<td>EMNLP</td>
 	<td><p>We present a transition-based AMR parser that directly generates AMR parses from plain text. We use Stack-LSTMs to represent our parser state and make decisions greedily. In our experiments, we show that our parser achieves very competitive scores on English using only AMR training data. Adding additional information, such as POS tags and dependency trees, improves the results further.</p>
 </td>
-	<td>AMR </td>
+	<td>amr lstm </td>
 </tr>
 
 
@@ -437,7 +437,7 @@ the information of existing papers or adding new work.
 	<td>EMNLP</td>
 	<td><p>To alleviate the error propagation in the traditional pipelined models for Abstract Meaning Representation (AMR) parsing, we formulate AMR parsing as a joint task that performs the two subtasks: concept identification and relation identification simultaneously. To this end, we first develop a novel componentwise beam search algorithm for relation identification in an incremental fashion, and then incorporate the decoder into a unified framework based on multiple-beam search, which allows for the bi-directional information flow between the two subtasks in a single incremental model. Experiments on the public datasets demonstrate that our joint model significantly outperforms the previous pipelined counterparts, and also achieves better or comparable performance than other approaches to AMR parsing, without utilizing external semantic resources.</p>
 </td>
-	<td>AMR </td>
+	<td>amr </td>
 </tr>
 
 <tr>
@@ -453,7 +453,7 @@ the information of existing papers or adding new work.
 	<td>ACL</td>
 	<td><p>Semantic parsers map natural language statements into meaning representations, and must abstract over syntactic phenomena, resolve anaphora, and identify word senses to eliminate ambiguous interpretations. Abstract meaning representation (AMR) is a recent example of one such semantic formalism which, similar to a dependency parse, utilizes a graph to represent relationships between concepts (Banarescu et al., 2013). As with dependency parsing, transition-based approaches are a common approach to this problem. However, when trained in the traditional manner these systems are susceptible to the accumulation of errors when they find undesirable states during greedy decoding. Imitation learning algorithms have been shown to help these systems recover from such errors. To effectively use these methods for AMR parsing we find it highly beneficial to introduce two novel extensions: noise reduction and targeted exploration. The former mitigates the noise in the feature representation, a result of the complexity of the task. The latter targets the exploration steps of imitation learning towards areas which are likely to provide the most information in the context of a large action-space. We achieve state-ofthe art results, and improve upon standard transition-based parsing by 4.7 F1 points.</p>
 </td>
-	<td>AMR </td>
+	<td>amr </td>
 </tr>
 
 
@@ -469,10 +469,9 @@ the information of existing papers or adding new work.
 	</td>
 	<td>Chuan Wang, Nianwen Xue, Sameer Pradhan</td>
 	<td>ACL</td>
-	<td><p>We describe Abstract Meaning Representation (AMR), a semantic representation language in which we are writing down the meanings of thousands of English sentences. We hope that a sembank of simple, whole-sentence semantic structures will spur new work in statistical natural language understanding and generation, like the Penn Treebank encouraged work on
-statistical parsing. This paper gives an overview of AMR and tools associated with it.</p>
+	<td><p>We report improved AMR parsing results by adding a new action to a transitionbased AMR parser to infer abstract concepts and by incorporating richer features produced by auxiliary analyzers such as a semantic role labeler and a coreference resolver. We report final AMR parsing results that show an improvement of 7% absolute in F1 score over the best previously reported result. Our parser is available at: https://github.com/Juicechuan/AMRParsing</p>
 </td>
-	<td>AMR </td>
+	<td>amr </td>
 </tr>
 
 <tr>
@@ -488,7 +487,7 @@ statistical parsing. This paper gives an overview of AMR and tools associated wi
 	<td>EMNLP</td>
 	<td><p>We present a parser for Abstract Meaning Representation (AMR). We treat Englishto-AMR conversion within the framework of string-to-tree, syntax-based machine translation (SBMT). To make this work, we transform the AMR structure into a form suitable for the mechanics of SBMT and useful for modeling. We introduce an AMR-specific language model and add data and features drawn from semantic resources. Our resulting AMR parser significantly improves upon state-of-the-art results.</p>
 </td>
-	<td>AMR </td>
+	<td>amr </td>
 </tr>
 
 
@@ -504,10 +503,9 @@ statistical parsing. This paper gives an overview of AMR and tools associated wi
 	</td>
 	<td>Laura Banarescu, Claire Bonial, Shu Cai, Madalina Georgescu, Kira Griffitt, Ulf Hermjakob, Kevin Knight, Philipp Koehn, Martha Palmer, Nathan Schneider</td>
 	<td>LAW</td>
-	<td><p>We describe Abstract Meaning Representation (AMR), a semantic representation language in which we are writing down the meanings of thousands of English sentences. We hope that a sembank of simple, whole-sentence semantic structures will spur new work in statistical natural language understanding and generation, like the Penn Treebank encouraged work on
-statistical parsing. This paper gives an overview of AMR and tools associated with it.</p>
+	<td><p>We describe Abstract Meaning Representation (AMR), a semantic representation language in which we are writing down the meanings of thousands of English sentences. We hope that a sembank of simple, whole-sentence semantic structures will spur new work in statistical natural language understanding and generation, like the Penn Treebank encouraged work on statistical parsing. This paper gives an overview of AMR and tools associated with it.</p>
 </td>
-	<td>AMR dataset </td>
+	<td>amr dataset </td>
 </tr>
 
 
